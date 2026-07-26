@@ -1,201 +1,255 @@
+<div align="center">
+
 # 🚚 Delivery TAT Analytics
+
+### Enterprise Power BI Dashboard for Supply Chain Operations
+
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)]()
+[![DAX](https://img.shields.io/badge/DAX-Advanced-blue?style=for-the-badge)]()
+[![Power Query](https://img.shields.io/badge/Power_Query-ETL-success?style=for-the-badge)]()
+[![SQL](https://img.shields.io/badge/SQL-Data_Modeling-orange?style=for-the-badge)]()
+[![Supply Chain](https://img.shields.io/badge/Domain-Supply_Chain-red?style=for-the-badge)]()
+
+---
+
+Built an end-to-end Power BI solution to monitor delivery performance across
+**1,600+ monthly shipments**, multiple warehouses, channels and courier partners.
+
+</div>
+
+---
+
+# Dashboard Preview
+
+## Customer Performance Dashboard
 
 <p align="center">
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-Advanced-blue?style=for-the-badge)
-![Power Query](https://img.shields.io/badge/Power_Query-ETL-success?style=for-the-badge)
-![Supply Chain](https://img.shields.io/badge/Domain-Supply_Chain-orange?style=for-the-badge)
-![Star Schema](https://img.shields.io/badge/Data_Model-Star_Schema-red?style=for-the-badge)
+<img src="Images/Customer Analysis.webp" width="100%">
 
 </p>
 
 ---
 
-## Dashboard Preview
+## Courier Performance Dashboard
 
-### Executive Dashboard
+<p align="center">
 
-![Dashboard](Images/Dashboard.png)
+<img src="Images/Courier Analysis.webp" width="100%">
 
----
-
-## Project Overview
-
-Delivery TAT Analytics is an enterprise Power BI reporting solution developed for Supply Chain Operations to monitor shipment movement, courier performance, warehouse efficiency, and delivery service levels.
-
-The dashboard consolidates operational data into a centralized reporting model, enabling stakeholders to track logistics KPIs, identify high-turnaround-time couriers, and improve delivery performance through data-driven decision making.
+</p>
 
 ---
 
-## Business Problem
+# Business Problem
 
-The logistics team relied on manual operational reports spread across multiple sources, making it difficult to:
+The Supply Chain Operations team relied on manually prepared operational reports that made it difficult to:
 
 - Monitor courier performance
-- Measure delivery turnaround time
 - Compare warehouse efficiency
-- Track delivery success rates
-- Analyze shipment performance across channels
+- Track Delivery TAT
+- Identify delayed shipments
+- Measure Delivery %
+- Monitor Fill Rate
 
-This resulted in delayed operational decisions and limited visibility into logistics performance.
-
----
-
-## Solution
-
-Developed an end-to-end Power BI solution using:
-
-- Power Query for ETL
-- Star Schema data model
-- Optimized DAX measures
-- Interactive dashboards
-- Dynamic filtering
-- Operational KPI tracking
+As shipment volume increased, generating reports became time-consuming and operational visibility decreased.
 
 ---
 
-## Dashboard Features
+# Solution
 
-- Executive KPI Cards
-- Courier Performance Analysis
-- Channel-wise Delivery Analysis
-- Zone-wise Delivery TAT
-- Dynamic Date Selection
-- Warehouse Performance
-- Delivery %
-- Dispatch TAT
-- Fill Rate
-- Interactive Drilldowns
+Developed an enterprise Power BI dashboard that centralizes logistics reporting into a single interactive reporting solution.
 
----
+The report enables operations teams to monitor logistics KPIs in real time while drilling down by:
 
-## Technology Stack
-
-| Layer | Technology |
-|--------|------------|
-| Reporting | Power BI |
-| ETL | Power Query (M) |
-| Semantic Layer | DAX |
-| Data Modeling | Star Schema |
-| Source | Google Sheets |
-| Visualization | Power BI Desktop |
+- Courier
+- Channel
+- Warehouse
+- Zone
+- Month
+- Custom Date Range
 
 ---
 
-## Key Performance Indicators
+# Key Features
+
+✅ Dynamic Date Intelligence
+
+✅ Courier Performance Analysis
+
+✅ Channel Performance Analysis
+
+✅ Zone-wise Delivery TAT
+
+✅ Interactive KPI Cards
+
+✅ Warehouse Analytics
+
+✅ Fill Rate Analysis
+
+✅ Dispatch TAT Monitoring
+
+---
+
+# Dashboard KPIs
 
 | KPI | Description |
 |------|-------------|
-| Total Dispatched Shipments | Number of shipments dispatched |
+| Total Dispatched Shipments | Total shipment volume |
 | Delivered Shipments | Successfully delivered shipments |
 | Delivery % | Delivery success rate |
-| Average Dispatch TAT | Dispatch efficiency |
-| Average Delivery TAT | Delivery performance |
-| Fill Rate % | Inventory fulfilment |
+| Average Dispatch TAT | PO Share → Dispatch |
+| Average Delivery TAT | Dispatch → Delivery |
+| Fill Rate % | Invoice Qty / KAM Qty |
 
 ---
 
-## Dashboard Pages
-
-### Customer Analysis
-
-![Customer Analysis](Images/Customer%20Analysis.webp)
-
----
-
-### Courier Analysis
-
-![Courier Analysis](Images/Courier%20Analysis.webp)
-
----
-
-## Data Model
-
-This solution follows a Star Schema consisting of:
-
-- Fact Table
-    - ST - 2026
-
-- Dimension Tables
-    - Date
-    - Channels
-    - Warehouse
-
-Detailed documentation is available under:
-
-```
-Data Model/
-```
-
----
-
-## ETL Pipeline
+# Data Architecture
 
 ```
 Google Sheets
-      │
-      ▼
-Power Query
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Data Modeling
-      │
-      ▼
-DAX Measures
-      │
-      ▼
-Power BI Dashboard
+        │
+        ▼
+ Power Query (ETL)
+        │
+        ▼
+ Data Cleaning
+        │
+        ▼
+ Star Schema
+        │
+        ▼
+ DAX Measures
+        │
+        ▼
+ Power BI Dashboard
 ```
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```
 Delivery-TAT-Analytics
 │
-├── DAX
-├── Data Model
-├── Documentation
+├── README.md
+│
 ├── Images
-├── Power Query
-└── README.md
+│   ├── Customer Analysis.webp
+│   └── Courier Analysis.webp
+│
+├── DAX
+│   ├── Date Measures.md
+│   ├── DateTable.md
+│   ├── Operational KPIs.md
+│   ├── Shipment KPIs.md
+│   └── TAT Measures.md
+│
+├── Documentation
+│   ├── Business Requirements.md
+│   ├── Dataset Description.md
+│   └── KPIs.md
+│
+├── Data Model
+│   └── Relationships.md
+│
+└── Power Query
+    ├── Clean
+    └── Data Cleaning.md
 ```
 
 ---
 
-## Business Impact
+# Data Model
 
-This dashboard enables the operations team to:
+The report follows a **Star Schema** consisting of:
 
-- Monitor logistics performance in real time
-- Identify high TAT couriers
-- Improve delivery visibility
-- Measure warehouse efficiency
-- Track service level KPIs
-- Reduce manual reporting effort
+### Fact Table
+
+- ST - 2026
+
+### Dimension Tables
+
+- dateTable
+- Channels
+- Warehouse
+
+Relationship documentation is available inside the **Data Model** folder.
 
 ---
 
-## Future Improvements
+# Power Query ETL
+
+The dataset undergoes the following transformations before loading into the semantic model:
+
+- Header Promotion
+- Data Type Assignment
+- Remove Unused Columns
+- Replace Errors
+- Status Standardization
+- Remove Cancelled Orders
+- Courier Name Standardization
+- Derived Month Name
+- Data Validation
+
+---
+
+# DAX Highlights
+
+The report includes optimized DAX measures for:
+
+- Dynamic Date Selection
+- Dispatch TAT
+- Delivery %
+- Shipment Count
+- Fill Rate
+- Date Intelligence
+
+Documentation for every measure is available inside the **DAX** folder.
+
+---
+
+# Business Impact
+
+The dashboard enables Supply Chain Operations to:
+
+- Reduce manual reporting effort
+- Monitor logistics KPIs in real time
+- Identify high TAT courier partners
+- Improve delivery visibility
+- Compare warehouse performance
+- Track SLA compliance
+
+---
+
+# Tech Stack
+
+| Layer | Technology |
+|---------|------------|
+| Reporting | Power BI Desktop |
+| ETL | Power Query |
+| Semantic Model | DAX |
+| Data Source | Google Sheets |
+| Data Modeling | Star Schema |
+| Version Control | GitHub |
+
+---
+
+# Future Improvements
 
 - Incremental Refresh
 - Row-Level Security
+- Microsoft Fabric
 - Deployment Pipelines
-- Microsoft Fabric Integration
 - Dataflows
 - Automated Alerts
 
 ---
 
-## Author
+# Author
 
-**Paras Kumar**
+## Paras Kumar
 
-Business Intelligence Analyst
+**Business Intelligence Analyst**
 
-Power BI • SQL • Excel • DAX • Power Query
+Power BI • SQL • DAX • Power Query • Excel
