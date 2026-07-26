@@ -9,7 +9,6 @@
 <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI">
 <img src="https://img.shields.io/badge/DAX-Advanced-blue?style=flat-square" alt="DAX">
 <img src="https://img.shields.io/badge/Power_Query-ETL-217346?style=flat-square" alt="Power Query">
-<img src="https://img.shields.io/badge/SQL-Data_Modeling-orange?style=flat-square" alt="SQL">
 <img src="https://img.shields.io/badge/Star_Schema-Optimized-6A1B9A?style=flat-square" alt="Star Schema">
 <img src="https://img.shields.io/badge/Supply_Chain-Analytics-E53935?style=flat-square" alt="Supply Chain">
 
