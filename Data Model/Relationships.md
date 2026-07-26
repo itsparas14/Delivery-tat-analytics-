@@ -16,6 +16,17 @@ Star Schema
 
 ## Relationships
 
+
+              dateTable
+                  │
+                  │ 1:*
+                  │
+Channels ───1:*── ST - 2026 ──*:1── WAREHOUSE
+                  │
+                  │
+             Measures
+             
+
   From                     To                           Cardinality
   ------------------------ ---------------------------- -----------------
   dateTable\[Date\]        ST - 2026\[Dispatch Date\]   1:\* (Active)
