@@ -6,19 +6,35 @@
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI">
-<img src="https://img.shields.io/badge/DAX-Advanced-blue?style=flat-square" alt="DAX">
-<img src="https://img.shields.io/badge/Power_Query-ETL-217346?style=flat-square" alt="Power Query">
-<img src="https://img.shields.io/badge/Star_Schema-Optimized-6A1B9A?style=flat-square" alt="Star Schema">
-<img src="https://img.shields.io/badge/Supply_Chain-Analytics-E53935?style=flat-square" alt="Supply Chain">
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black">
+<img src="https://img.shields.io/badge/DAX-Advanced-blue?style=flat-square">
+<img src="https://img.shields.io/badge/Power_Query-ETL-217346?style=flat-square">
+<img src="https://img.shields.io/badge/Star_Schema-Optimized-6A1B9A?style=flat-square">
+<img src="https://img.shields.io/badge/Supply_Chain-Analytics-E53935?style=flat-square">
 
 </p>
----
 
-Built an end-to-end Power BI solution to monitor delivery performance across
-**1,600+ monthly shipments**, multiple warehouses, channels and courier partners.
+Built an end-to-end Power BI solution to monitor delivery performance across **1,600+ monthly shipments**, multiple warehouses, sales channels, and courier partners.
 
 </div>
+
+---
+
+# 📑 Table of Contents
+
+- [Dashboard Preview](#dashboard-preview)
+- [Business Problem](#business-problem)
+- [Solution](#solution)
+- [Key Features](#key-features)
+- [Dashboard KPIs](#dashboard-kpis)
+- [Data Architecture](#data-architecture)
+- [Repository Structure](#repository-structure)
+- [Power Query ETL](#power-query-etl)
+- [DAX Highlights](#dax-highlights)
+- [Business Impact](#business-impact)
+- [Tech Stack](#tech-stack)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
 
 ---
 
@@ -27,9 +43,7 @@ Built an end-to-end Power BI solution to monitor delivery performance across
 ## Customer Performance Dashboard
 
 <p align="center">
-
 <img src="Images/Customer Analysis.webp" width="100%">
-
 </p>
 
 ---
@@ -37,16 +51,14 @@ Built an end-to-end Power BI solution to monitor delivery performance across
 ## Courier Performance Dashboard
 
 <p align="center">
-
 <img src="Images/Courier Analysis.webp" width="100%">
-
 </p>
 
 ---
 
 # Business Problem
 
-The Supply Chain Operations team relied on manually prepared operational reports that made it difficult to:
+The Supply Chain Operations team relied on manually prepared operational reports, making it difficult to:
 
 - Monitor courier performance
 - Compare warehouse efficiency
@@ -55,43 +67,34 @@ The Supply Chain Operations team relied on manually prepared operational reports
 - Measure Delivery %
 - Monitor Fill Rate
 
-As shipment volume increased, generating reports became time-consuming and operational visibility decreased.
+As shipment volumes increased, report preparation became slower while operational visibility decreased.
 
 ---
 
 # Solution
 
-Developed an enterprise Power BI dashboard that centralizes logistics reporting into a single interactive reporting solution.
+Developed an enterprise Power BI dashboard that centralized logistics reporting into a single interactive reporting solution.
 
-The report enables operations teams to monitor logistics KPIs in real time while drilling down by:
-• Automated reporting for 1,600+ monthly shipments
+The dashboard provides:
 
-• Monitored performance across 12 logistics partners
-
-• Centralized courier, warehouse, and channel analytics
-
-• Reduced manual KPI reporting through interactive dashboards
-
+- Automated reporting for 1,600+ monthly shipments
+- Monitoring across 12 logistics partners
+- Courier, warehouse and channel performance analysis
+- Interactive drill-through reporting
+- Real-time KPI monitoring
 
 ---
 
 # Key Features
 
-✅ Dynamic Date Intelligence
-
-✅ Courier Performance Analysis
-
-✅ Channel Performance Analysis
-
-✅ Zone-wise Delivery TAT
-
-✅ Interactive KPI Cards
-
-✅ Warehouse Analytics
-
-✅ Fill Rate Analysis
-
-✅ Dispatch TAT Monitoring
+- Dynamic Date Intelligence
+- Courier Performance Analysis
+- Customer Performance Analysis
+- Warehouse Analytics
+- Zone-wise Delivery TAT
+- Dispatch TAT Monitoring
+- Fill Rate Analysis
+- Interactive KPI Cards
 
 ---
 
@@ -110,30 +113,30 @@ The report enables operations teams to monitor logistics KPIs in real time while
 
 # Data Architecture
 
-```
+```text
 Google Sheets
-        │
-        ▼
- Power Query (ETL)
-        │
-        ▼
- Data Cleaning
-        │
-        ▼
- Star Schema
-        │
-        ▼
- DAX Measures
-        │
-        ▼
- Power BI Dashboard
+      │
+      ▼
+Power Query ETL
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Data Modeling
+      │
+      ▼
+DAX Measures
+      │
+      ▼
+Power BI Dashboard
 ```
 
 ---
 
 # Repository Structure
 
-```
+```text
 Delivery-TAT-Analytics
 │
 ├── README.md
@@ -144,7 +147,7 @@ Delivery-TAT-Analytics
 │
 ├── DAX
 │   ├── Date Measures.md
-│   ├── DateTable.md
+│   ├── Date Table.md
 │   ├── Operational KPIs.md
 │   ├── Shipment KPIs.md
 │   └── TAT Measures.md
@@ -154,9 +157,6 @@ Delivery-TAT-Analytics
 │   ├── Dataset Description.md
 │   └── KPIs.md
 │
-├── Data Model
-│   └── Relationships.md
-│
 └── Power Query
     ├── Clean
     └── Data Cleaning.md
@@ -164,36 +164,18 @@ Delivery-TAT-Analytics
 
 ---
 
-# Data Model
-
-The report follows a **Star Schema** consisting of:
-
-### Fact Table
-
-- ST - 2026
-
-### Dimension Tables
-
-- dateTable
-- Channels
-- Warehouse
-
-Relationship documentation is available inside the **Data Model** folder.
-
----
-
 # Power Query ETL
 
-The dataset undergoes the following transformations before loading into the semantic model:
+Key transformations include:
 
 - Header Promotion
 - Data Type Assignment
-- Remove Unused Columns
-- Replace Errors
+- Error Handling
+- Removing Unused Columns
 - Status Standardization
-- Remove Cancelled Orders
-- Courier Name Standardization
-- Derived Month Name
+- Courier Name Cleaning
+- Removing Cancelled Orders
+- Date Formatting
 - Data Validation
 
 ---
@@ -202,26 +184,26 @@ The dataset undergoes the following transformations before loading into the sema
 
 The report includes optimized DAX measures for:
 
-- Dynamic Date Selection
-- Dispatch TAT
-- Delivery %
 - Shipment Count
+- Delivery %
+- Dispatch TAT
+- Delivery TAT
 - Fill Rate
-- Date Intelligence
+- Dynamic Date Intelligence
 
-Documentation for every measure is available inside the **DAX** folder.
+Complete DAX documentation is available inside the **DAX** folder.
 
 ---
 
 # Business Impact
 
-The dashboard enables Supply Chain Operations to:
+The dashboard enables Supply Chain teams to:
 
 - Reduce manual reporting effort
 - Monitor logistics KPIs in real time
-- Identify high TAT courier partners
-- Improve delivery visibility
+- Identify high-TAT courier partners
 - Compare warehouse performance
+- Improve delivery visibility
 - Track SLA compliance
 
 ---
@@ -241,11 +223,11 @@ The dashboard enables Supply Chain Operations to:
 # Future Improvements
 
 - Incremental Refresh
-- Row-Level Security
-- Microsoft Fabric
+- Row-Level Security (RLS)
+- Microsoft Fabric Integration
 - Deployment Pipelines
 - Dataflows
-- Automated Alerts
+- Automated KPI Alerts
 
 ---
 
@@ -255,4 +237,4 @@ The dashboard enables Supply Chain Operations to:
 
 **Business Intelligence Analyst**
 
-Power BI • SQL • DAX • Power Query • Excel
+**Skills:** Power BI • SQL • DAX • Power Query • Excel
