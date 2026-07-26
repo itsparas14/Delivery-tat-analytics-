@@ -4,12 +4,10 @@
 
 ### Enterprise Power BI Dashboard for Supply Chain Operations
 
-[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)]()
-[![DAX](https://img.shields.io/badge/DAX-Advanced-blue?style=for-the-badge)]()
-[![Power Query](https://img.shields.io/badge/Power_Query-ETL-success?style=for-the-badge)]()
-[![SQL](https://img.shields.io/badge/SQL-Data_Modeling-orange?style=for-the-badge)]()
-[![Supply Chain](https://img.shields.io/badge/Domain-Supply_Chain-red?style=for-the-badge)]()
-
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Advanced-blue?style=for-the-badge)
+![Power Query](https://img.shields.io/badge/Power_Query-ETL-success?style=for-the-badge)
+![Supply Chain](https://img.shields.io/badge/Domain-Supply_Chain-red?style=for-the-badge)
 ---
 
 Built an end-to-end Power BI solution to monitor delivery performance across
