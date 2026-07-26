@@ -56,6 +56,14 @@ Built an end-to-end Power BI solution to monitor delivery performance across **1
 
 ---
 
+## Data Model
+<p align="center">
+<img src="Images/Data Mode.webp" width="95%">
+</p>
+
+The semantic model follows a Star Schema with a central fact table connected to supporting dimension tables for efficient filtering and optimized DAX calculations.
+
+
 # Business Problem
 
 The Supply Chain Operations team relied on manually prepared operational reports, making it difficult to:
