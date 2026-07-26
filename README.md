@@ -234,7 +234,6 @@ The dashboard enables Supply Chain Operations to:
 | Semantic Model | DAX |
 | Data Source | Google Sheets |
 | Data Modeling | Star Schema |
-| Version Control | GitHub |
 
 ---
 
