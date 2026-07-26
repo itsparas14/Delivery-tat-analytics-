@@ -64,13 +64,14 @@ As shipment volume increased, generating reports became time-consuming and opera
 Developed an enterprise Power BI dashboard that centralizes logistics reporting into a single interactive reporting solution.
 
 The report enables operations teams to monitor logistics KPIs in real time while drilling down by:
+• Automated reporting for 1,600+ monthly shipments
 
-- Courier
-- Channel
-- Warehouse
-- Zone
-- Month
-- Custom Date Range
+• Monitored performance across 12 logistics partners
+
+• Centralized courier, warehouse, and channel analytics
+
+• Reduced manual KPI reporting through interactive dashboards
+
 
 ---
 
