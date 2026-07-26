@@ -4,17 +4,16 @@
 
 ### Enterprise Power BI Dashboard for Supply Chain Operations
 
-![Power BI](https://img.shields.io/badge/Power_BI-Enterprise-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+<p align="center">
 
-![DAX](https://img.shields.io/badge/DAX-Performance_Optimized-00599C?style=for-the-badge)
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI">
+<img src="https://img.shields.io/badge/DAX-Advanced-blue?style=flat-square" alt="DAX">
+<img src="https://img.shields.io/badge/Power_Query-ETL-217346?style=flat-square" alt="Power Query">
+<img src="https://img.shields.io/badge/SQL-Data_Modeling-orange?style=flat-square" alt="SQL">
+<img src="https://img.shields.io/badge/Star_Schema-Optimized-6A1B9A?style=flat-square" alt="Star Schema">
+<img src="https://img.shields.io/badge/Supply_Chain-Analytics-E53935?style=flat-square" alt="Supply Chain">
 
-![Power Query](https://img.shields.io/badge/Power_Query-ETL-217346?style=for-the-badge)
-
-![Star Schema](https://img.shields.io/badge/Data_Model-Star_Schema-5C2D91?style=for-the-badge)
-
-![Supply Chain](https://img.shields.io/badge/Domain-Supply_Chain-EA4335?style=for-the-badge)
-
-![Google Sheets](https://img.shields.io/badge/Data_Source-Google_Sheets-34A853?style=for-the-badge)
+</p>
 ---
 
 Built an end-to-end Power BI solution to monitor delivery performance across
